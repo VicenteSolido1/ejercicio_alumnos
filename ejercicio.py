@@ -17,9 +17,11 @@ while True:
         alumno = {"codigo": codigo ,
                    "nombre": nombre ,
                    "edad": edad     }
-        alumnos.appendappend(alumno)
+        alumnos.append(alumno)
     elif opc =="2":
-        pass
+        print("Ver alumnos")
+        for x in alumnos:
+            print(f"El alumno de codigo {x["codigo"]}, tiene {x["edad"]} años y su nombre es {x["nombre"]} ")
     elif opc =="3":
         pass
     else:
