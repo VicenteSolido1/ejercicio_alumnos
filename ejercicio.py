@@ -11,9 +11,15 @@ while True:
     opc = input("Seleccione la opcion")
     os.system("cls")
     if opc =="1":
-        nombre = input("ingrese el nombre del alumno: ")
-        codigo = input("INGRESE EL CODIGO: ")
-        edad = int(input("Ingrese la edad del alumno: "))
+        while True:
+         nombre = input("ingrese el nombre del alumno: ").strip
+         if len >=3 and nombre.isalpha():
+             break
+         else:
+             print("error, debe hacerlo bien")
+             codigo = input("INGRESE EL CODIGO: ")
+
+             edad = int(input("Ingrese la edad del alumno: "))
         alumno = {"codigo": codigo ,
                    "nombre": nombre ,
                    "edad": edad     }
